@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手机淘宝 by Kingsley Don</title>
+	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/customize.min.css">
+	<!--根据dpr设置meta，根据内部宽度设置HTML的font-size-->
+	<script>
+	var dpr = window.devicePixelRatio;
+	document.write('<meta name="viewport" content="width=device-width,initial-scale=' + 1 / dpr +',minimum-scale=' + 1 / dpr +',maximum-scale=' + 1 / dpr +',user-scalable=no" />')
+	var clientWidth = document.documentElement.clientWidth;
+	document.getElementsByTagName('html')[0].style.fontSize = clientWidth / 10 + 'px';
+	</script>
+</head>
+<body>
+	<div class="top-fixed">
+		<header>
+			<div class="header-wrap">
+				<div id="search-placeholder">
+					<span><i class="iconfont">&#xe65c;</i>&nbsp;寻找宝贝店铺</span>
+				</div>
+			</div>
+		</header>
+	</div>
+	<div class="scroll-wrap">
+		
+	</div>
+	<div class="bottom-fixed">
+		<footer>
+			<a href="" class="home">
+				<span><i class="iconfont">&#xe6b8;</i></span>
+				<p>首页</p>
+			</a>
+			<a href="" class="delivery">
+				<span><i class="iconfont">&#xe671;</i></span>
+				<p>物流</p>
+			</a>
+			<a href="" class="cart">
+				<span><i class="iconfont">&#xe6af;</i></span>
+				<p>购物车</p>
+			</a>
+			<a href="" class="my">
+				<span><i class="iconfont">&#xf0090;</i></span>
+				<p>我的淘宝</p>
+			</a>
+			<a href="" class="more">
+				<span><i class="iconfont">&#xe684;</i></span>
+				<p>更多</p>
+			</a>
+		</footer>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+//定义px与rem转换函数
+@function p2r($px){
+    $rem : 64px;
+    @return ($px/$rem) + rem;
+}
+//声明iconfont字体
+@font-face {font-family: 'iconfont';
+	src: url('../fonts/iconfont.woff') format('woff'), /* chrome、firefox */
+	url('../fonts/iconfont.ttf') format('truetype'); /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+}
+
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.top-fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	header {
+		background-color: #ff5301;
+		.header-wrap {
+			padding-top: p2r(22px);
+			padding-bottom: p2r(19px);
+			padding-right: p2r(13px);
+			padding-left: p2r(73px);
+			background-image: url("../images/logo.png");
+			background-size: p2r(54px) p2r(40px);
+			background-position: p2r(9px) center;
+			background-repeat: no-repeat;
+			box-sizing: border-box;
+			#search-placeholder {
+				background-color: #b82601;
+				text-align: center;
+				font-size: p2r(26px);
+				border-radius: p2r(8px);
+				span {
+					display: inline-block;
+					height: p2r(50px);
+					line-height: p2r(50px);
+					border-radius: p2r(7px);
+					font-size: p2r(25px);
+					color: #efe0dd;
+					font-family: iconfont;
+					.iconfont {
+						font-size: p2r(25px);
+					}
+				}	
+			}
+		}
+	}
+}
+
+.scroll-wrap {
+	margin-top: p2r(91px);
+}
+
+.bottom-fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	footer {
+		width: 100%;
+		padding-top: p2r(13px);
+		display: flex;
+		height: p2r(88px);
+		border-top: 1px solid #E7E7E7;
+		border-bottom: 1px solid #F8F8F8;
+		a {
+			box-sizing: border-box;
+			flex: 1;
+			text-align: center;
+			font-size: p2r(24px);
+			font-family: iconfont;
+			color: #5d646a;
+			text-decoration: none;
+			.iconfont{
+				font-size: p2r(40px);
+			}
+		}
+	}
+}
