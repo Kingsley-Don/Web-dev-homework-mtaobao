@@ -52,9 +52,6 @@
 					font-size: p2r(25px);
 					color: #efe0dd;
 					font-family: iconfont;
-					.iconfont {
-						font-size: p2r(25px);
-					}
 				}	
 			}
 		}
@@ -82,11 +79,13 @@
 			flex: 1;
 			text-align: center;
 			font-size: p2r(24px);
+			line-height: p2r(24px);
 			font-family: iconfont;
 			color: #5d646a;
 			text-decoration: none;
 			.iconfont{
 				font-size: p2r(40px);
+				line-height: p2r(40px);
 			}
 		}
 	}
