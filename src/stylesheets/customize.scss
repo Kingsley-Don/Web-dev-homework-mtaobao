@@ -22,6 +22,10 @@
 	padding: 0;
 }
 
+a {
+	text-decoration: none;
+}
+
 .top-fixed {
 	position: fixed;
 	top: 0;
@@ -52,6 +56,10 @@
 					font-size: p2r(25px);
 					color: #efe0dd;
 					font-family: iconfont;
+					vertical-align: middle;
+					.iconfont {
+						font-size: p2r(30px);
+					}
 				}	
 			}
 		}
@@ -60,6 +68,21 @@
 
 .scroll-wrap {
 	margin-top: p2r(91px);
+	.app {
+		width: 100%;
+		height: p2r(84px);
+		background-color: #5f646e;
+		.close {
+			height: p2r(84px);
+			width: p2r(70px);
+			line-height: p2r(84px);
+			text-align: center;
+			color: #fff;
+			.iconfont {
+				font-size: p2r(34px);
+			}
+		}
+	}
 }
 
 .bottom-fixed {
@@ -69,11 +92,11 @@
 	width: 100%;
 	footer {
 		width: 100%;
-		padding-top: p2r(13px);
+		padding-top: p2r(11px);
 		display: flex;
-		height: p2r(88px);
-		border-top: 1px solid #E7E7E7;
-		border-bottom: 1px solid #F8F8F8;
+		height: p2r(73px);
+		border-top: p2r(2px) solid #E7E7E7;
+		border-bottom: p2r(2px) solid #F8F8F8;
 		a {
 			box-sizing: border-box;
 			flex: 1;
@@ -82,10 +105,12 @@
 			line-height: p2r(24px);
 			font-family: iconfont;
 			color: #5d646a;
-			text-decoration: none;
-			.iconfont{
+			span {
 				font-size: p2r(40px);
 				line-height: p2r(40px);
+			}
+			.iconfont{
+				font-size: p2r(40px);
 			}
 		}
 	}
