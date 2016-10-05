@@ -5,12 +5,8 @@
 	<title>手机淘宝 by Kingsley Don</title>
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/customize.min.css">
 	<!--根据dpr设置meta，根据内部宽度设置HTML的font-size-->
-	<script>
-	var dpr = window.devicePixelRatio;
-	document.write('<meta name="viewport" content="width=device-width,initial-scale=' + 1 / dpr +',minimum-scale=' + 1 / dpr +',maximum-scale=' + 1 / dpr +',user-scalable=no" />')
-	var clientWidth = document.documentElement.clientWidth;
-	document.getElementsByTagName('html')[0].style.fontSize = clientWidth / 10 + 'px';
-	</script>
+	<script type="text/javascript" src="../assets/javascript/rem.js"></script>
+	<script type="text/javascript" src="../assets/javascript/close.js"></script>
 </head>
 <body>
 	<div class="top-fixed">
@@ -23,8 +19,10 @@
 		</header>
 	</div>
 	<div class="scroll-wrap">
-		<div class="app">
-			<a href=""><div  class="close"><i class="iconfont">&#xe659;</i></div></a>
+		<div class="app" id="app">
+			<div  class="close" onclick="remove()"><i class="iconfont">&#xe659;</i></div>
+			<div class="app-logo"><img src="../assets/images/applogo.png"><span>上客户端，领专属好礼！</span></div>
+			<a href=""><div class="download">立即领取</div></a>
 		</div>
 	</div>
 	<div class="bottom-fixed">
@@ -51,6 +49,5 @@
 			</a>
 		</footer>
 	</div>
-
 </body>
 </html>

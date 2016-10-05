@@ -69,18 +69,50 @@ a {
 .scroll-wrap {
 	margin-top: p2r(90px);
 	.app {
+		font-size: 0;
 		width: 100%;
 		height: p2r(84px);
 		background-color: #5f646e;
 		.close {
+			display: inline-block;
+			vertical-align: top;
 			height: p2r(84px);
-			width: p2r(70px);
+			width: p2r(80px);
 			line-height: p2r(84px);
-			text-align: center;
 			color: #fff;
 			.iconfont {
 				font-size: p2r(34px);
+				margin-left: p2r(17px);
 			}
+		}
+		.app-logo {
+			display: inline-block;
+			vertical-align: top;
+			width: p2r(400px);
+			height: p2r(84px);
+			line-height: p2r(84px);
+			img {
+				width: p2r(60px);
+				height: p2r(60px);
+				vertical-align: middle;
+				margin-right: p2r(16px);
+			}
+			span {
+				font-size: p2r(25px);
+				vertical-align: middle;
+				color: #fff;
+			}
+		}
+		.download {
+			display: inline-block;
+			vertical-align: top;
+			width: p2r(160px);
+			height: p2r(84px);
+			background-color: #ff5301;
+			font-size: p2r(30px);
+			line-height: p2r(84px);
+			text-align: center;
+			color: #fff;
 		}
 	}
 }
