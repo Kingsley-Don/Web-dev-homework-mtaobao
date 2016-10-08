@@ -238,10 +238,45 @@ a {
 		}
 	}
 }
-.board-two-title {
+
+.title-box{
+	margin-left: p2r(11.5px);
+}
+.board-title {
 	height: p2r(63px);
-	width: p2r(620px);
-	background-color: #eee;
+	font-size: 0;
+	div {
+		vertical-align: top;
+	}
+	.dline {
+		box-sizing: border-box;
+		display: inline-block;
+		width: p2r(244px);
+		height: p2r(32px);
+		border-bottom: p2r(2px) solid #ccc;
+	}
+	.title {
+		display: inline-block;
+		text-align: center;
+		box-sizing: border-box;
+		height: p2r(63px);
+		line-height: p2r(63px);
+		padding-left: p2r(10px);
+		padding-right: p2r(4px);
+		span {
+			vertical-align: middle;
+			color: #ff1701;
+			font-size: p2r(27px);
+		}
+		img {
+			vertical-align: middle;
+			width: p2r(34px);
+		}
+	}
+}
+
+#title2 {
+	color: #6c20a4;
 }
 .bottom-fixed {
 	position: fixed;
