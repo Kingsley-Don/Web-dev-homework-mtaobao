@@ -64,11 +64,8 @@ a {
 			}
 		}
 	}
-}
-
-.scroll-wrap {
-	margin-top: p2r(90px);
 	.app {
+		margin-top: p2r(-1px);
 		font-size: 0;
 		width: 100%;
 		height: p2r(84px);
@@ -117,6 +114,106 @@ a {
 	}
 }
 
+.scroll-wrap {
+	margin-top: p2r(84px + 90px);
+	margin-bottom: p2r(88px);
+	background-color: #eeeeee;
+	.slider-banner {
+		width: 100%;
+		height: p2r(200px);
+		background-color: #bbb;
+	}
+	.eight-botton {
+		background-color: #FFF;
+		padding-top: p2r(20px);
+		padding-bottom: p2r(20px);
+		.line {
+			width: p2r(616px);
+			display: flex;
+			font-size: 0;
+			text-align: center;
+			margin: auto;
+			a {
+				flex: 1;
+				//width: p2r(154px);
+				font-size: 0;
+				img {
+					width: p2r(78px);
+				}
+				.botton-text {
+					font-size: p2r(23px);
+					color: #666666;
+					margin-top: p2r(6px);
+				}
+			}
+		}
+		#line2 {
+			padding-top: p2r(24px);
+		}
+	}
+}
+
+.toutiao {
+	box-sizing: border-box;
+	padding-top: p2r(8px);
+	padding-bottom: p2r(8px);
+	height: p2r(64px);
+	background-color: #FFF;
+	font-size: 0;
+	span {
+		vertical-align: middle;
+		display: inline-block;
+	}
+	.toutiao-logo {
+		box-sizing: border-box;
+		height: p2r(48px);
+		width: p2r(137px);
+		line-height: p2r(48px);
+		border-right: p2r(2px) solid #eee;
+		background: url(../images/toutiao.png) center center / p2r(99px) p2r(29px) no-repeat;
+	}
+	.box {
+		margin-left: p2r(18px);
+		margin-right: p2r(18px);
+		box-sizing: border-box;
+		height: p2r(34px);
+		width: p2r(68px);
+		line-height: p2r(30px);
+		font-size: p2r(28px);
+		color: #da0d14;
+		border: p2r(2px) solid;
+		border-radius: p2r(7px);
+		text-align: center;
+	}
+	.toutiao-title {
+		height: p2r(48px);
+		line-height: p2r(48px);
+		font-size: p2r(28px);
+		color: 3b3b3b;
+	}
+}
+
+.board-one{
+	margin-top: p2r(20px);
+	height: p2r(308px);
+	width: 100%;
+	background-color: #FFF;
+	box-sizing: border-box;
+	.left-one {
+		width: p2r(257px);
+		height: p2r(308px);
+		border-right: p2r(2px) solid #eee;
+	}
+	.right-one {
+		.right-one-top {
+			height: p2r(124px);
+			border-bottom: p2r(2px) solid #eee;
+		}
+		.right-one-bottom {
+
+		}
+	}
+}
 .bottom-fixed {
 	position: fixed;
 	bottom: 0;
