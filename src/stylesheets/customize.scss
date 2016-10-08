@@ -194,24 +194,54 @@ a {
 
 .board-one{
 	margin-top: p2r(20px);
-	height: p2r(308px);
+	height: p2r(320px);
 	width: 100%;
 	background-color: #FFF;
 	box-sizing: border-box;
-	.left-one {
+	font-size: 0;
+	div {
+		box-sizing: border-box;
+	}
+	.one-left {
+		background: url(../images/one-left.jpg) / p2r(233px) p2r(308px);
+		background-repeat: no-repeat;
+		display: inline-block;
 		width: p2r(257px);
-		height: p2r(308px);
+		height: p2r(320px);
 		border-right: p2r(2px) solid #eee;
 	}
-	.right-one {
-		.right-one-top {
-			height: p2r(124px);
+	.one-right {
+		display: inline-block;
+		vertical-align: top;
+		.one-right-top {
+			width: p2r(383px);
+			height: p2r(146px);
 			border-bottom: p2r(2px) solid #eee;
+			img {
+				height: 100%;
+			}
 		}
-		.right-one-bottom {
-
+		.one-right-bottom {
+			img {
+				width: 100%;
+			}
+			.one-right-bottom-left {
+				height: p2r(320px - 146px);
+				display: inline-block;
+				width: p2r(192px);
+				border-right: p2r(2px) solid #eee;
+			}
+			.one-right-bottom-right {
+				display: inline-block;
+				width: p2r(191px);
+			}
 		}
 	}
+}
+.board-two-title {
+	height: p2r(63px);
+	width: p2r(620px);
+	background-color: #eee;
 }
 .bottom-fixed {
 	position: fixed;
