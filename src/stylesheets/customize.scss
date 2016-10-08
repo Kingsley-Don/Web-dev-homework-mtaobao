@@ -65,7 +65,6 @@ a {
 		}
 	}
 	.app {
-		margin-top: p2r(-1px);
 		font-size: 0;
 		width: 100%;
 		height: p2r(84px);
@@ -115,7 +114,7 @@ a {
 }
 
 .scroll-wrap {
-	margin-top: p2r(83px + 90px);
+	margin-top: p2r(84px + 90px);
 	margin-bottom: p2r(88px);
 	background-color: #eeeeee;
 	.slider-banner {
