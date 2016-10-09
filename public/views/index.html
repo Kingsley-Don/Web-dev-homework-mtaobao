@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>手机淘宝 by Kingsley Don</title>
+	<link rel="stylesheet" href="../assets/stylesheets/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/stylesheets/customize.min.css">
 	<!--根据dpr设置meta，根据内部宽度设置HTML的font-size-->
 	<script type="text/javascript" src="../assets/javascript/rem.js"></script>
@@ -27,12 +28,20 @@
 	</div>
 	<div class="scroll-wrap">
 		<div class="slider-banner">
-			<ul>
-				<li class="card"></li>
-				<li class="card"></li>
-				<li class="card"></li>
-			</ul>
-			<div class="indicator"></div>
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../assets/images/slider1.jpg"></div>
+					<div class="swiper-slide"><img src="../assets/images/slider2.jpg"></div>
+					<div class="swiper-slide"><img src="../assets/images/slider3.jpg"></div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination"></div>
+				<!-- 如果需要导航按钮 
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+				<!-- 如果需要滚动条 
+				<div class="swiper-scrollbar"></div>-->
+			</div>
 		</div>
 		<div class="eight-botton">
 			<div class="line">
@@ -215,5 +224,24 @@
 	</div>
 	<script type="text/javascript" src="../assets/javascript/close.js"></script>
 	<script type="text/javascript" src="../assets/javascript/loading.js"></script>
+	<script src="../assets/javascript/swiper.min.js"></script>
+	<script>        
+	  var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'horizontal',
+	    loop: true,
+	    autoplay : 3000,
+		autoplayDisableOnInteraction : false,
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	    // 如果需要前进后退按钮
+	    //nextButton: '.swiper-button-next',
+	    //prevButton: '.swiper-button-prev',
+	    
+	    // 如果需要滚动条
+	    //scrollbar: '.swiper-scrollbar',
+	  })        
+  </script>
+</body>
 </body>
 </html>
