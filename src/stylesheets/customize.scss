@@ -161,8 +161,14 @@ a {
 			width: 100%;
 			height: p2r(200px);
 		}
-		.swiper-slider img {
+		.swiper-wrapper {
 			width: 100%;
+			.swiper-slide {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
 		}
 	}
 	.eight-botton {
