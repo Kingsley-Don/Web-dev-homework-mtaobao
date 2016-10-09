@@ -27,15 +27,31 @@ a {
 	text-decoration: none;
 }
 
-#loading{
+.loading{
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #ff5301;
+	background-color: rgba(255,255,255,0.9);
 	height: 100%;
 	width: 100%;
 	z-index: 999;
+	font-size: p2r(35px);
+	text-align: center;
+	color: #fff;
+	div {
+		position:absolute; 
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		vertical-align: middle;
+		background-color: #ff5301;
+		height: p2r(300px);
+		width: p2r(300px);
+		border-radius: p2r(150px);
+		line-height: p2r(300px);
+	}
 }
+
 .top-fixed {
 	position: fixed;
 	top: 0;
