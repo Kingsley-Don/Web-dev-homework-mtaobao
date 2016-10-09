@@ -318,16 +318,100 @@ a {
 }
 
 .items {
+	font-size: 0;
+	background-color: #eee;
 	.items-line {
-		height: p2r(427px);
+		height: p2r(387px);
+		margin-bottom: p2r(8px);
+		box-sizing: border-box;
 		.item-left {
 			width: p2r(316px);
-			float: left;
+			display: inline-block;
+			margin-right: p2r(8px);
+			background-color: #FFF;
 		}
 		.item-right {
+			display: inline-block;
 			width: p2r(316px);
-			float: right;
+			background-color: #FFF;
 		}
+		.item-img {
+			box-sizing: border-box;
+			height: p2r(279px);
+			width: p2r(316px);
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: p2r(316px);
+		}
+		.item-info{
+			height: p2r(50px);
+			width: p2r(316px);
+			box-sizing: border-box;
+			padding: p2r(12px) p2r(20px);
+			font-size: p2r(25px);
+			line-height: p2r(26px);
+		}
+		.item-price {
+			box-sizing: border-box;
+			width: p2r(316px);
+			height: 57px;
+			padding-left: p2r(20px);
+			font-size: p2r(30px);
+			color: #ff5301;
+		}
+	}
+	#items-line-bottom {
+		margin-bottom: 0;
+	}
+	padding-bottom: p2r(8px);
+}
+
+#img1 {
+	background-image: url(../images/item1.jpg);
+}
+#img2 {
+	background-image: url(../images/item2.png);
+}
+#img3 {
+	background-image: url(../images/item3.jpg);
+}
+#img4 {
+	background-image: url(../images/item4.jpg);
+}
+#img5 {
+	background-image: url(../images/item5.jpg);
+}
+#img6 {
+	background-image: url(../images/item6.jpg);
+}
+
+.login {
+	height: p2r(200px);
+	background-color: #4e525e;
+	font-size: 0;
+	box-sizing: border-box;
+	padding: p2r(36px) p2r(16px);
+	.logbotton {
+		display: flex;
+		justify-content: space-between;
+		a{
+			display: inline-block;
+			background-color: #555965;
+			border: p2r(2px) solid #42454d;
+			height: p2r(64px);
+			line-height: p2r(64px);
+			border-radius: p2r(12px);
+			font-size: p2r(28px);
+			color: #c3c6ca;
+			padding-right: p2r(30px);
+			padding-left: p2r(30px);
+		}
+	}
+	.copyright {
+		font-size: p2r(24px);
+		color: #c3c6ca;
+		text-align: center;
+		margin-top: p2r(36px);
 	}
 }
 .bottom-fixed {
