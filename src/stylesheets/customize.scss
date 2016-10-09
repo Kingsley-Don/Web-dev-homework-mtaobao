@@ -143,6 +143,7 @@ a {
 	.swiper-pagination-bullet {
 		width: p2r(16px);
 		height: p2r(16px);
+		margin: 0 p2r(6px)!important;
 	}
 	.swiper-pagination-bullet-active {
 		background: #fe5301;
@@ -159,6 +160,9 @@ a {
 		.swiper-container {
 			width: 100%;
 			height: p2r(200px);
+		}
+		.swiper-slider img {
+			width: 100%;
 		}
 	}
 	.eight-botton {
