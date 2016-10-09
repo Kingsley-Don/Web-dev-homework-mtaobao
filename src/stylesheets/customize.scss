@@ -53,6 +53,7 @@ a {
 }
 
 .top-fixed {
+	z-index: 998;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -464,6 +465,7 @@ a {
 	}
 }
 .bottom-fixed {
+	z-index: 998;
 	position: fixed;
 	bottom: 0;
 	left: 0;
