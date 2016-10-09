@@ -27,6 +27,15 @@ a {
 	text-decoration: none;
 }
 
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #ff5301;
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+}
 .top-fixed {
 	position: fixed;
 	top: 0;

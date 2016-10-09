@@ -1,1 +1,1 @@
-function closeapp(){document.getElementById("app").style.display="none",document.getElementById("scroll").style.marginTop="1.40625rem"}
+document.getElementsByClassName("close")[0].onclick=function(){document.getElementsByClassName("app")[0].style.display="none",document.getElementsByClassName("scroll-wrap")[0].style.marginTop="1.40625rem"};

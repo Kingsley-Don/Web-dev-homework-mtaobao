@@ -1,0 +1,1 @@
+document.getElementsByTagName("body")[0].onload=function(){setTimeout(function(){document.getElementById("loading").style.display="none"},1500)};
