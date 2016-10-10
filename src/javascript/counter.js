@@ -6,15 +6,15 @@ function count() {
 	var ch = t.getHours();
 	var cm = t.getMinutes();
 	var cs = t.getSeconds();
-	if (cs > 50) {
-		s.innerHTML = '0' + (60 - cs);
+	if (cs > 49) {
+		s.innerHTML = '0' + (59 - cs);
 	} else {
-		s.innerHTML = 60 - cs;
+		s.innerHTML = 59 - cs;
 	}
-	if (cm > 50) {
-		m.innerHTML = '0' + (60 - cm);
+	if (cm > 49) {
+		m.innerHTML = '0' + (59 - cm);
 	} else {
-		m.innerHTML = 60 - cm;
+		m.innerHTML = 59 - cm;
 	}
 	if (cm == 0 && cs == 0) {
 		h.innerHTML = '01';
