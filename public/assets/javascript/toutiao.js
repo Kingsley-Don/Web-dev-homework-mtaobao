@@ -1,0 +1,1 @@
+function change(){nIntervId=setInterval(toutiaoArray,2800)}function toutiaoArray(){var t=document.getElementsByClassName("toutiao-title")[0];t.innerHTML="先定个小目标，比如写好淘宝"==t.innerHTML?"好烦啊不想写":"先定个小目标，比如写好淘宝"}change();

@@ -238,7 +238,7 @@ a {
 		height: p2r(48px);
 		line-height: p2r(48px);
 		font-size: p2r(28px);
-		color: 3b3b3b;
+		color: #3b3b3b;
 	}
 }
 
@@ -259,6 +259,31 @@ a {
 		width: p2r(257px);
 		height: p2r(320px);
 		border-right: p2r(2px) solid #eee;
+		.counter {
+			box-sizing: border-box;
+		    margin-top: 1.406rem;
+		    margin-left: 0.172rem;
+		    width: 2.781rem;
+		    height: 0.594rem;
+		    span {
+		    	display: inline-block;
+			    width: 0.533rem;
+			    height: 0.533rem;
+			    line-height: 0.533rem;
+			    vertical-align: middle;
+			    margin: 0 0.03125rem;
+			    color: #fff;
+			    background: #333;
+			    text-align: center;
+			    font-size: 0.3125rem;
+			    border-radius: 0.02667rem;
+		    }
+		    .dot {
+		    	width: 0.125rem;
+			    color: #333;
+			    background: transparent;
+		    }
+		}
 	}
 	.one-right {
 		display: inline-block;
@@ -394,6 +419,7 @@ a {
 			background-size: p2r(316px);
 		}
 		.item-info{
+			color: #000;
 			height: p2r(50px);
 			width: p2r(316px);
 			box-sizing: border-box;

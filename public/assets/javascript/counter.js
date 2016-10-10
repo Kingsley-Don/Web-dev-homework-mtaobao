@@ -1,0 +1,1 @@
+function count(){var e=new Date,n=(e.getHours(),e.getMinutes()),t=e.getSeconds();t>50?s.innerHTML="0"+(60-t):s.innerHTML=60-t,n>50?m.innerHTML="0"+(60-n):m.innerHTML=60-n,0==n&&0==t?h.innerHTML="01":h.innerHTML="00"}var h=document.getElementsByClassName("h")[0],m=document.getElementsByClassName("m")[0],s=document.getElementsByClassName("s")[0];setInterval("count()",1e3);
