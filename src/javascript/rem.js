@@ -8,3 +8,7 @@ function width() {
 }
 dprfunc();
 width();
+
+window.addEventListener("resize", function(){
+  width();
+});
