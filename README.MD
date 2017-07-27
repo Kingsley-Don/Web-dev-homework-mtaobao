@@ -1,4 +1,4 @@
-#手机淘宝
+# 手机淘宝
 > Web开发第二次作业
 
 访问[这里](https://kingsley-don.github.io/Web-dev-mtaobao/public/views/)可查看预览
